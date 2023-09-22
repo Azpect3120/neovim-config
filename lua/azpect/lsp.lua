@@ -15,7 +15,7 @@ capabilities.textDocument.completion.completionItem.resolveSupport = {
 }
 
 
-local servers = { 'html', 'cssls', 'tsserver', 'clangd', 'gopls' }
+local servers = { 'tailwindcss', 'html', 'cssls', 'tsserver', 'clangd', 'gopls' }
 
 lspconfig.tsserver.setup { on_attach = on_attach }
 
@@ -43,5 +43,6 @@ cmp.setup({
     },
     sources = {
         { name = 'nvim_lsp' }, -- LSP as the source
+        { name = 'tailwindcss' },
     },
 })

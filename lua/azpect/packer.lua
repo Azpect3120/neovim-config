@@ -37,10 +37,14 @@ return require('packer').startup(function(use)
   use('hrsh7th/cmp-cmdline')
   use('hrsh7th/cmp-nvim-lsp')
   use({
-	"L3MON4D3/LuaSnip",
-	tag = "v2.*", -- Replace <CurrentMajor> by the latest released major (first number of latest release)
-	run = "make install_jsregexp"
-})
+      "L3MON4D3/LuaSnip",
+      tag = "v2.*", -- Replace <CurrentMajor> by the latest released major (first number of latest release)
+      run = "make install_jsregexp"
+  })
+  use('sheerun/vim-polyglot')
+  use('windwp/nvim-ts-autotag')
+  use('windwp/nvim-autopairs')
+
 
   -- LSP Plugins
   use('neovim/nvim-lspconfig')
