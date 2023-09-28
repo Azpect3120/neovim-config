@@ -5,7 +5,6 @@ require("nvim-lsp-installer").setup {}
 
 
 local on_attach = function(client, bufnr)
-    print("LSP started for " .. client.name)
 end
 
 local capabilities = vim.lsp.protocol.make_client_capabilities()
