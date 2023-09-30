@@ -13,6 +13,20 @@ capabilities.textDocument.completion.completionItem.resolveSupport = {
     properties = { 'documentation', 'detail', 'additionalTextEdits' },
 }
 
+vim.lsp.handlers["textDocument/publishDiagnostics"] = vim.lsp.with(
+    vim.lsp.diagnostic.on_publish_diagnostics, {
+        -- Disable virtual text
+        virtual_text = true,
+        -- Enable gutter signs for diagnostics
+        signs = true,
+        -- Enable underline for diagnostics
+        underline = true,
+        -- Update diagnostics in insert mode
+        update_in_insert = true,
+        -- Set this to the maximum number of diagnostics you want to see (optional)
+        max_diagnostics = 100,  -- Adjust as needed
+    }
+)
 
 local servers = { 'tailwindcss', 'html', 'cssls', 'tsserver', 'clangd', 'gopls' }
 
