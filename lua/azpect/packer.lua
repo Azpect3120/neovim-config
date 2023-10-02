@@ -29,6 +29,36 @@ return require('packer').startup(function(use)
   use('mbbill/undotree')
   use('tpope/vim-fugitive')
   use('akinsho/toggleterm.nvim')
+  use({
+      "kylechui/nvim-surround",
+      tag = "*", -- Use for stability; omit to use `main` branch for the latest features
+      config = function()
+        require("nvim-surround").setup({
+            -- Configuration here, or leave empty to use defaults
+          })
+      end
+    })
+  use({
+      'Wansmer/treesj',
+      requires = { 'nvim-treesitter/nvim-treesitter' },
+      config = function()
+        require('treesj').setup({
+          use_default_keymaps = true,
+          check_syntax_error = true,
+          cursor_behavior = "hold",
+          notify = true,
+          dot_repeat = true,
+          on_error = nil,
+          langs = { }
+        })
+      end,
+    })
+  use('f-person/git-blame.nvim')
+  use({
+      'folke/trouble.nvim',
+      requires = { "nvim-tree/nvim-web-devicons" },
+    })
+  use('mattn/emmet-vim')
 
   -- LSP Completions
   use('hrsh7th/nvim-cmp')
