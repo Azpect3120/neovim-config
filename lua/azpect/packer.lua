@@ -58,6 +58,7 @@ return require('packer').startup(function(use)
       'folke/trouble.nvim',
       requires = { "nvim-tree/nvim-web-devicons" },
     })
+  use('mattn/emmet-vim')
 
   -- LSP Completions
   use('hrsh7th/nvim-cmp')
