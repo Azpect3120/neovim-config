@@ -23,7 +23,7 @@ return require('packer').startup(function(use)
   selectColor('rose-pine')
 
   -- More plugins
-  use('nvim-treesitter/nvim-treesitter')
+  use{'nvim-treesitter/nvim-treesitter', run = ':TSUpdate'}
   use('nvim-treesitter/playground')
   use('theprimeagen/harpoon')
   use('mbbill/undotree')
