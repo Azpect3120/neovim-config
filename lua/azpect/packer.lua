@@ -59,6 +59,7 @@ return require('packer').startup(function(use)
       requires = { "nvim-tree/nvim-web-devicons" },
     })
   use('mattn/emmet-vim')
+  use('terrortylor/nvim-comment')
 
   -- LSP Completions
   use('hrsh7th/nvim-cmp')
@@ -79,6 +80,9 @@ return require('packer').startup(function(use)
   -- LSP Plugins
   use('neovim/nvim-lspconfig')
   use('williamboman/nvim-lsp-installer')
+
+  -- .templ syntax highlighting
+  use('joerdav/templ.vim')
 
   -- Snippets
   use('hrsh7th/vim-vsnip')
