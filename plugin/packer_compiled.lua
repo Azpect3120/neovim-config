@@ -49,8 +49,8 @@ local function save_profiles(threshold)
 end
 
 time([[Luarocks path setup]], true)
-local package_path_str = "/home/azpect/.cache/nvim/packer_hererocks/2.1.0-beta3/share/lua/5.1/?.lua;/home/azpect/.cache/nvim/packer_hererocks/2.1.0-beta3/share/lua/5.1/?/init.lua;/home/azpect/.cache/nvim/packer_hererocks/2.1.0-beta3/lib/luarocks/rocks-5.1/?.lua;/home/azpect/.cache/nvim/packer_hererocks/2.1.0-beta3/lib/luarocks/rocks-5.1/?/init.lua"
-local install_cpath_pattern = "/home/azpect/.cache/nvim/packer_hererocks/2.1.0-beta3/lib/lua/5.1/?.so"
+local package_path_str = "/home/azpect/.cache/nvim/packer_hererocks/2.1.1692716794/share/lua/5.1/?.lua;/home/azpect/.cache/nvim/packer_hererocks/2.1.1692716794/share/lua/5.1/?/init.lua;/home/azpect/.cache/nvim/packer_hererocks/2.1.1692716794/lib/luarocks/rocks-5.1/?.lua;/home/azpect/.cache/nvim/packer_hererocks/2.1.1692716794/lib/luarocks/rocks-5.1/?/init.lua"
+local install_cpath_pattern = "/home/azpect/.cache/nvim/packer_hererocks/2.1.1692716794/lib/lua/5.1/?.so"
 if not string.find(package.path, package_path_str, 1, true) then
   package.path = package.path .. ';' .. package_path_str
 end
@@ -201,7 +201,7 @@ _G.packer_plugins = {
     url = "https://github.com/akinsho/toggleterm.nvim"
   },
   treesj = {
-    config = { "\27LJ\2\n›\1\0\0\4\0\5\0\t6\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\3\0004\3\0\0=\3\4\2B\0\2\1K\0\1\0\nlangs\1\0\5\20cursor_behavior\thold\23check_syntax_error\2\24use_default_keymaps\2\vnotify\2\15dot_repeat\2\nsetup\vtreesj\frequire\0" },
+    config = { "\27LJ\2\n›\1\0\0\4\0\5\0\t6\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\3\0004\3\0\0=\3\4\2B\0\2\1K\0\1\0\nlangs\1\0\5\15dot_repeat\2\20cursor_behavior\thold\23check_syntax_error\2\24use_default_keymaps\2\vnotify\2\nsetup\vtreesj\frequire\0" },
     loaded = true,
     path = "/home/azpect/.local/share/nvim/site/pack/packer/start/treesj",
     url = "https://github.com/Wansmer/treesj"
@@ -240,7 +240,7 @@ try_loadstring("\27LJ\2\n?\0\0\3\0\3\0\a6\0\0\0'\2\1\0B\0\2\0029\0\2\0004\2\0\0B
 time([[Config for nvim-surround]], false)
 -- Config for: treesj
 time([[Config for treesj]], true)
-try_loadstring("\27LJ\2\n›\1\0\0\4\0\5\0\t6\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\3\0004\3\0\0=\3\4\2B\0\2\1K\0\1\0\nlangs\1\0\5\20cursor_behavior\thold\23check_syntax_error\2\24use_default_keymaps\2\vnotify\2\15dot_repeat\2\nsetup\vtreesj\frequire\0", "config", "treesj")
+try_loadstring("\27LJ\2\n›\1\0\0\4\0\5\0\t6\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\3\0004\3\0\0=\3\4\2B\0\2\1K\0\1\0\nlangs\1\0\5\15dot_repeat\2\20cursor_behavior\thold\23check_syntax_error\2\24use_default_keymaps\2\vnotify\2\nsetup\vtreesj\frequire\0", "config", "treesj")
 time([[Config for treesj]], false)
 
 _G._packer.inside_compile = false

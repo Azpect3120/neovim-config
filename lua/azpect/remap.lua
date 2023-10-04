@@ -1,4 +1,3 @@
--- Set the leader that prefixes function
 vim.g.mapleader = ' '
 
 -- Preview file tree
@@ -32,3 +31,11 @@ vim.keymap.set('v', '<leader>y', '\"+y')
 
 -- Stop process in the terminal
 vim.keymap.set('n', '<C-c>', '<C-\\><C-n>:exec("tunmenu\\n")<CR><C-c>')
+
+-- Remap caps lock
+vim.keymap.set('n', '<CapsLock>', '<Esc>')
+vim.keymap.set('v', '<CapsLock>', '<Esc>')
+vim.keymap.set('c', '<CapsLock>', '<Esc>')
+vim.keymap.set('x', '<CapsLock>', '<Esc>')
+vim.keymap.set('s', '<CapsLock>', '<Esc>')
+vim.keymap.set('o', '<CapsLock>', '<Esc>')
