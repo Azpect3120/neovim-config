@@ -39,3 +39,9 @@ vim.keymap.set('c', '<CapsLock>', '<Esc>')
 vim.keymap.set('x', '<CapsLock>', '<Esc>')
 vim.keymap.set('s', '<CapsLock>', '<Esc>')
 vim.keymap.set('o', '<CapsLock>', '<Esc>')
+
+-- Window selection
+vim.keymap.set('n', '<A-h>', '<C-W>h')
+vim.keymap.set('n', '<A-j>', '<C-W>j')
+vim.keymap.set('n', '<A-k>', '<C-W>k')
+vim.keymap.set('n', '<A-l>', '<C-W>l')

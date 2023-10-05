@@ -13,14 +13,19 @@ return require('packer').startup(function(use)
 
   -- Color schemes
   use({'rose-pine/neovim', as = 'rose-pine'})
-  use({'catppuccin/nvim', as = 'catppuccin'})
-
+  use({'catppuccin/nvim', as = 'catppuccin'}) 
+  use('NLKNguyen/papercolor-theme') -- PaperColor
+  use('Mofiqul/dracula.nvim') -- dracula
+  use('joshdick/onedark.vim') -- onedark
+  use('romainl/Apprentice') -- apprentice
+  use('rebelot/kanagawa.nvim') -- kanagawa
+ 
   -- Select color scheme
   function selectColor(color)
     vim.cmd('colorscheme ' .. color)
   end
-
-  selectColor('rose-pine')
+  
+  selectColor('kanagawa')
 
   -- More plugins
   use{'nvim-treesitter/nvim-treesitter', run = ':TSUpdate'}
