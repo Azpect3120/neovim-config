@@ -1,7 +1,14 @@
 -- git status
 vim.keymap.set('n', '<leader>gs', vim.cmd.Git)
 
-vim.keymap.set('n', '<leader>gd', vim.cmd.Gdiff)
+-- git diffsplit! (view merge conflicts)
+vim.keymap.set('n', '<leader>gd', ':Gvdiffsplit!<CR>')
+
+-- select left diff
+vim.keymap.set('n', '<leader>dgh', ':diffget //2 <CR>')
+
+-- select right diff
+vim.keymap.set('n', '<leader>dgl', ':diffget //3 <CR>')
 
 -- git commit
 vim.keymap.set('n', '<leader>gc', ':G commit<CR>')
