@@ -69,6 +69,9 @@ return require('packer').startup(function(use)
     })
   use('mattn/emmet-vim')
   use('terrortylor/nvim-comment')
+  use('kristijanhusak/vim-dadbod-ui')
+  use('tpope/vim-dadbod')
+
 
   -- LSP Completions
   use('hrsh7th/nvim-cmp')
