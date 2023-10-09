@@ -38,6 +38,7 @@ vim.opt.updatetime = 50
 vim.opt.spell = true
 vim.opt.spelllang = 'en_us'
 vim.cmd([[highlight SpellBad cterm=underline gui=underline]])
+vim.cmd([[highlight SpellLocal cterm=none gui=none]])
 
 -- Set EJS files to be handled as html files
 vim.cmd('autocmd BufNewFile,BufRead *.ejs setfiletype html')

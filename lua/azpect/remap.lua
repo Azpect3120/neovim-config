@@ -45,3 +45,18 @@ vim.keymap.set('n', '<A-h>', '<C-W>h')
 vim.keymap.set('n', '<A-j>', '<C-W>j')
 vim.keymap.set('n', '<A-k>', '<C-W>k')
 vim.keymap.set('n', '<A-l>', '<C-W>l')
+
+-- Toggle spell check
+local spellCheckEnabled = true
+local function ToggleSpellCheck ()
+	if spellCheckEnabled then
+		vim.opt.spell = false
+		spellCheckEnabled = false
+		vim.cmd('echo "Spell check disabled"')
+	else
+		vim.opt.spell = true
+		spellCheckEnabled = true
+		vim.cmd('echo "Spell check enabled"')
+	end
+end
+vim.keymap.set('n', '<leader>sc', ToggleSpellCheck, {})
