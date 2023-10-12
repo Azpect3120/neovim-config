@@ -42,6 +42,3 @@ vim.cmd([[highlight SpellLocal cterm=none gui=none]])
 
 -- Set EJS files to be handled as html files
 vim.cmd('autocmd BufNewFile,BufRead *.ejs setfiletype html')
-
--- Set .templ files to be handled as templ files
-vim.cmd('autocmd BufNewFile,BufRead *.templ setfiletype templ')
