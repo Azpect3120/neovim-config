@@ -23,9 +23,6 @@ vim.keymap.set('n', '<leader>gp', ':G push origin ' .. get_current_branch() .. '
 -- git pull origin ... 
 vim.keymap.set('n', '<leader>gl', ':G pull origin ' .. get_current_branch() .. '<CR>')
 
--- git log
-vim.keymap.set('n', '<leader>gl', ':G log<CR>')
-
 -- git blame
 vim.keymap.set('n', '<leader>gb', ':G blame<CR>')
 
