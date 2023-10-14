@@ -1,3 +1,7 @@
+-- Get current branch
+local function get_current_branch()
+	return vim.fn.system('git rev-parse --abbrev-ref HEAD 2>/dev/null | tr -d \'\\n\'')
+end
 -- git status
 vim.keymap.set('n', '<leader>gs', vim.cmd.Git)
 
@@ -14,7 +18,16 @@ vim.keymap.set('n', '<leader>dgl', ':diffget //3 <CR>')
 vim.keymap.set('n', '<leader>gc', ':G commit<CR>')
 
 -- git push origin ...
-vim.keymap.set('n', '<leader>gps', ':G push origin')
+vim.keymap.set('n', '<leader>gp', ':G push origin ' .. get_current_branch() .. '<CR>')
 
 -- git pull origin ... 
-vim.keymap.set('n', '<leader>gpl', ':G pull origin')
+vim.keymap.set('n', '<leader>gl', ':G pull origin ' .. get_current_branch() .. '<CR>')
+
+-- git log
+vim.keymap.set('n', '<leader>gl', ':G log<CR>')
+
+-- git blame
+vim.keymap.set('n', '<leader>gb', ':G blame<CR>')
+
+-- git checkout
+vim.keymap.set('n', '<leader>gco', ':G checkout ')
