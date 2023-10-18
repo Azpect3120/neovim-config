@@ -71,6 +71,7 @@ return require('packer').startup(function(use)
   use('terrortylor/nvim-comment')
   use('kristijanhusak/vim-dadbod-ui')
   use('tpope/vim-dadbod')
+  use('williamboman/mason.nvim')
 
 
   -- LSP Completions
