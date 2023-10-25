@@ -73,7 +73,6 @@ return require('packer').startup(function(use)
   use('tpope/vim-dadbod')
   use('williamboman/mason.nvim')
 
-
   -- LSP Completions
   use('hrsh7th/nvim-cmp')
   use('hrsh7th/cmp-buffer')

@@ -42,3 +42,8 @@ vim.cmd([[highlight SpellLocal cterm=none gui=none]])
 
 -- Set EJS files to be handled as html files
 vim.cmd('autocmd BufNewFile,BufRead *.ejs setfiletype html')
+
+-- Set up folding
+vim.opt.foldmethod = 'expr'
+vim.opt.foldexpr = 'nvim_treesitter#foldexpr()'
+vim.keymap.set('n', '<leader><leader>', 'za')
