@@ -1,5 +1,4 @@
 -- Prettier
-vim.g["prettier#autoformat"] = 1
 vim.g["prettier#config#config_precedence"] = "prefer-file"
 vim.g["prettier#config#config_files"] = {
   "package.json",
@@ -11,7 +10,8 @@ vim.g["prettier#config#config_files"] = {
   ".prettierrc.cjs",
 }
 
-vim.keymap.set('n', '<leader>p', ':Prettier<CR>')
+-- Prettier remap
+vim.keymap.set('n', '<leader>p', ':PrettierAsync<CR>')
 
 -- GO (gfmt)
 vim.api.nvim_exec([[
