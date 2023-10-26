@@ -23,7 +23,6 @@ return require('packer').startup(function(use)
   use('joshdick/onedark.vim') -- onedark
   use('romainl/Apprentice') -- apprentice
   use('rebelot/kanagawa.nvim') -- kanagawa
-<<<<<<< Updated upstream
  
   -- Select color scheme
   function selectColor(color)
@@ -31,12 +30,6 @@ return require('packer').startup(function(use)
   end
   
   selectColor('rose-pine')
-=======
-
-  -- Set color scheme
-  vim.cmd('colorscheme kanagawa')
->>>>>>> Stashed changes
-
   -- More plugins
   use{'nvim-treesitter/nvim-treesitter', run = ':TSUpdate'}
   use('nvim-treesitter/playground')
