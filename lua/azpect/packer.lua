@@ -29,7 +29,7 @@ return require('packer').startup(function(use)
     vim.cmd('colorscheme ' .. color)
   end
   
-  selectColor('kanagawa')
+  selectColor('rose-pine')
 
   -- More plugins
   use{'nvim-treesitter/nvim-treesitter', run = ':TSUpdate'}
@@ -72,6 +72,7 @@ return require('packer').startup(function(use)
   use('kristijanhusak/vim-dadbod-ui')
   use('tpope/vim-dadbod')
   use('williamboman/mason.nvim')
+  use('xiyaowong/transparent.nvim')
 
   -- LSP Completions
   use('hrsh7th/nvim-cmp')
