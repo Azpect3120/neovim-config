@@ -72,6 +72,7 @@ return require('packer').startup(function(use)
   use('tpope/vim-dadbod')
   use('williamboman/mason.nvim')
   use('xiyaowong/transparent.nvim')
+  use('prettier/vim-prettier')
 
   -- LSP Completions
   use('hrsh7th/nvim-cmp')
