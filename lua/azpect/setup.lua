@@ -3,7 +3,7 @@ vim.wo.number = true
 vim.wo.relativenumber = true
 
 -- Line number width
-vim.wo.numberwidth = 3
+vim.wo.numberwidth = 5
 
 -- Indent size
 vim.opt.tabstop = 4
@@ -21,6 +21,10 @@ vim.opt.undofile = true
 -- Searching
 vim.opt.hlsearch = false
 vim.opt.incsearch = true
+
+-- Cursor
+vim.opt.cursorline = true
+vim.opt.cursorcolumn = false
 
 -- Colors
 vim.opt.termguicolors = true
