@@ -1,5 +1,4 @@
-local lspconfig = require('lspconfig')
-local cmp = require("cmp")
+local lspconfig = require('lspconfig') local cmp = require("cmp")
 require("luasnip.loaders.from_vscode").lazy_load()
 require("nvim-lsp-installer").setup {}
 
@@ -28,7 +27,7 @@ vim.lsp.handlers["textDocument/publishDiagnostics"] = vim.lsp.with(
     }
 )
 
-local servers = { 'tailwindcss', 'html', 'cssls', 'tsserver', 'clangd', 'gopls' }
+local servers = { 'tailwindcss', 'html', 'cssls', 'tsserver', 'clangd', 'gopls', 'rust_analyzer', 'htmx' }
 
 lspconfig.tsserver.setup { on_attach = on_attach }
 

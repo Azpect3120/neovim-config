@@ -6,7 +6,7 @@ vim.keymap.set('n', '<leader>gf', builtin.git_files, {})
 vim.keymap.set('n', '<leader>fb', builtin.buffers, {})
 
 -- LSP references and definitions
-vim.keymap.set('n', '<leader>r', builtin.lsp_references, {})
+vim.keymap.set('n', '<leader>lr', builtin.lsp_references, {})
 vim.keymap.set('n', '<leader>d', builtin.lsp_definitions, {})
 vim.keymap.set('n', '<leader>td', builtin.lsp_type_definitions, {})
 
