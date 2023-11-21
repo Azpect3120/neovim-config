@@ -27,7 +27,7 @@ vim.lsp.handlers["textDocument/publishDiagnostics"] = vim.lsp.with(
     }
 )
 
-local servers = { 'tailwindcss', 'html', 'cssls', 'tsserver', 'clangd', 'gopls', 'rust_analyzer', 'htmx', 'jdtls', 'pylsp', 'bashls' }
+local servers = { 'tailwindcss', 'html', 'cssls', 'tsserver', 'clangd', 'gopls', 'rust_analyzer', 'htmx', 'jdtls', 'pylsp', 'bashls', 'sumneko_lua' }
 
 lspconfig.tsserver.setup { on_attach = on_attach }
 
@@ -37,7 +37,7 @@ for _, lsp in ipairs(servers) do
         capabilities = capabilities,
     }
 
-    lspconfig[lsp].setup(config) 
+    lspconfig[lsp].setup(config)
 end
 
 
