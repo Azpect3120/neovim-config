@@ -4,6 +4,7 @@ require("nvim-lsp-installer").setup {}
 
 
 local on_attach = function(client, bufnr)
+    vim.api.nvim_buf_set_keymap(bufnr, 'n', 'K', '<Cmd>lua vim.lsp.buf.hover()<CR>')
 end
 
 local capabilities = vim.lsp.protocol.make_client_capabilities()
