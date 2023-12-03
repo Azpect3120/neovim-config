@@ -33,7 +33,7 @@ vim.keymap.set('n', '<leader>clr', builtin.colorscheme, {})
 
 require('telescope').setup{
 	defaults = {
-		file_ignore_patterns = { "node_modules" }
+		file_ignore_patterns = { "node_modules", ".git" }
 	},
 	extensions = {}
 }
