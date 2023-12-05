@@ -9,6 +9,7 @@ vim.keymap.set('n', '<leader>fb', builtin.buffers, {})
 vim.keymap.set('n', '<leader>lr', builtin.lsp_references, {})
 vim.keymap.set('n', '<leader>d', builtin.lsp_definitions, {})
 vim.keymap.set('n', '<leader>td', builtin.lsp_type_definitions, {})
+vim.keymap.set('n', '<leader>f', builtin.lsp_document_symbols, {})
 
 -- Back to original file
 vim.keymap.set('n', '<leader><leader>', "<C-^>", {})
