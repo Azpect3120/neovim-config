@@ -16,11 +16,6 @@ function ToggleLineNumbers ()
 end
 vim.keymap.set('n', '<leader>num', ToggleLineNumbers, {})
 
-
--- Move around highlighted blocks in visual mode
-vim.keymap.set('v', 'J', "m: '>+1<CR>gv=gv")
-vim.keymap.set('v', 'K', "m: '<-2<CR>gv=gv")
-
 -- Keep cursor in the middle when using half page jumps
 vim.keymap.set('n', '<C-d>', '<C-d>zz')
 vim.keymap.set('n', '<C-u>', '<C-u>zz')

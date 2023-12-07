@@ -28,7 +28,7 @@ vim.opt.cursorcolumn = false
 
 -- Colors
 vim.opt.termguicolors = true
-vim.opt.colorcolumn = '80'
+vim.opt.colorcolumn = '0'
 
 -- Scrolling
 vim.opt.scrolloff = 8

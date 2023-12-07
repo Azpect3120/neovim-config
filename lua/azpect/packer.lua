@@ -4,7 +4,7 @@ vim.cmd [[packadd packer.nvim]]
 return require('packer').startup(function(use)
   -- Packer can manage itself
   use 'wbthomason/packer.nvim'
-  
+
   -- Plugins 
   use {
     'nvim-telescope/telescope.nvim', tag = '0.1.3',
@@ -17,19 +17,22 @@ return require('packer').startup(function(use)
 
   -- Color schemes
   use({'rose-pine/neovim', as = 'rose-pine'})
-  use({'catppuccin/nvim', as = 'catppuccin'}) 
+  use({'catppuccin/nvim', as = 'catppuccin'})
   use('NLKNguyen/papercolor-theme') -- PaperColor
   use('Mofiqul/dracula.nvim') -- dracula
   use('joshdick/onedark.vim') -- onedark
   use('romainl/Apprentice') -- apprentice
   use('rebelot/kanagawa.nvim') -- kanagawa
- 
+  use('ghifarit53/tokyonight-vim')
+  use('bluz71/vim-nightfly-colors')
+
   -- Select color scheme
-  function selectColor(color)
+  local function selectColor(color)
     vim.cmd('colorscheme ' .. color)
   end
-  
+
   selectColor('rose-pine')
+
   -- More plugins
   use{'nvim-treesitter/nvim-treesitter', run = ':TSUpdate'}
   use('nvim-treesitter/playground')
