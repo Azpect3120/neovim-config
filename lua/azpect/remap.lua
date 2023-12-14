@@ -41,6 +41,10 @@ vim.keymap.set('n', '<A-j>', '<C-W>j')
 vim.keymap.set('n', '<A-k>', '<C-W>k')
 vim.keymap.set('n', '<A-l>', '<C-W>l')
 
+-- Disable cutting with 'x'
+vim.keymap.set('n', 'x', '"_x')
+vim.keymap.set('x', 'x', '"_x')
+
 -- Toggle spell check
 local spellCheckEnabled = true
 local function ToggleSpellCheck ()
