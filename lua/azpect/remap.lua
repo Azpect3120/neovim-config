@@ -51,8 +51,8 @@ vim.cmd("command! -nargs=0 Q q")
 vim.cmd("command! -nargs=0 WQ wq")
 
 -- Creating lines above and below
-vim.keymap.set('n', '<Enter>', ":call append(line('.'), '')<CR>", {})
-vim.keymap.set('n', '<leader><Enter>', ":call append(line('.') - 1, '')<CR>", {})
+-- vim.keymap.set('n', '<Enter>', ":call append(line('.'), '')<CR>", {})
+-- vim.keymap.set('n', '<leader><Enter>', ":call append(line('.') - 1, '')<CR>", {})
 
 -- Toggle spell check
 local spellCheckEnabled = true
