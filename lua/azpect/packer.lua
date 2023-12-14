@@ -77,6 +77,7 @@ return require('packer').startup(function(use)
   use('xiyaowong/transparent.nvim')
   use('prettier/vim-prettier')
   use('rush-rs/tree-sitter-asm')
+  use('ThePrimeagen/vim-be-good')
 
   -- LSP Completions
   use('hrsh7th/nvim-cmp')
