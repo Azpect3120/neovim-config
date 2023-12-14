@@ -28,7 +28,7 @@ vim.lsp.handlers["textDocument/publishDiagnostics"] = vim.lsp.with(
     }
 )
 
-local servers = { 'tailwindcss', 'html', 'cssls', 'tsserver', 'clangd', 'gopls', 'rust_analyzer', 'htmx', 'jdtls', 'pylsp', 'bashls', 'lua_ls' }
+local servers = { 'tailwindcss', 'html', 'cssls', 'tsserver', 'clangd', 'gopls', 'rust_analyzer', 'htmx', 'jdtls', 'pylsp', 'bashls', 'lua_ls', 'sqlls' }
 
 lspconfig.tsserver.setup { on_attach = on_attach }
 
@@ -40,6 +40,11 @@ for _, lsp in ipairs(servers) do
 
     lspconfig[lsp].setup(config)
 end
+
+lspconfig.clangd.setup {
+    filetypes = { 'c', 'cpp' },
+    root_dir = require'lspconfig'.util.root_pattern("compile_commands.json", "CMakeLists.txt", "Makefile", ".git"),
+}
 
 
 cmp.setup({
