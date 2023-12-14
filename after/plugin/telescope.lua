@@ -4,6 +4,7 @@ local builtin = require('telescope.builtin')
 vim.keymap.set('n', '<leader>ff', builtin.find_files, {})
 vim.keymap.set('n', '<leader>fg', builtin.git_files, {})
 vim.keymap.set('n', '<leader>fb', builtin.buffers, {})
+vim.keymap.set('n', '<leader>gg', builtin.live_grep, {})
 
 -- LSP references and definitions
 vim.keymap.set('n', '<leader>lr', builtin.lsp_references, {})
@@ -34,7 +35,9 @@ vim.keymap.set('n', '<leader>clr', builtin.colorscheme, {})
 
 require('telescope').setup{
 	defaults = {
-		file_ignore_patterns = { "node_modules", ".git" }
+		file_ignore_patterns = {
+			"node_modules", ".git"
+		}
 	},
 	extensions = {}
 }
