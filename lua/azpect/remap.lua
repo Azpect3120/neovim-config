@@ -45,6 +45,11 @@ vim.keymap.set('n', '<A-l>', '<C-W>l')
 vim.keymap.set('n', 'x', '"_x')
 vim.keymap.set('x', 'x', '"_x')
 
+-- Disable case-sensitivity for 'q', 'w', and 'wq'
+vim.cmd("command! -nargs=0 W w")
+vim.cmd("command! -nargs=0 Q q")
+vim.cmd("command! -nargs=0 WQ wq")
+
 -- Toggle spell check
 local spellCheckEnabled = true
 local function ToggleSpellCheck ()
