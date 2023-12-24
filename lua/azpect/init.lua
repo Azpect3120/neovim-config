@@ -26,3 +26,7 @@ vim.g.user_emmet_settings = {
         },
     },
 }
+
+-- Ocaml shit
+-- local opamshare = vim.fn.substitute(vim.fn.system('opam var share'), '\n$', '', '')
+-- vim.cmd('set rtp+=' .. opamshare .. '/merlin/vim')

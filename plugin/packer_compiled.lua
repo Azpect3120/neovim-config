@@ -84,6 +84,11 @@ _G.packer_plugins = {
     path = "/home/azpect/.local/share/nvim/site/pack/packer/start/LuaSnip",
     url = "https://github.com/L3MON4D3/LuaSnip"
   },
+  ["SpaceWay.vim"] = {
+    loaded = true,
+    path = "/home/azpect/.local/share/nvim/site/pack/packer/start/SpaceWay.vim",
+    url = "https://github.com/Gavinok/SpaceWay.vim"
+  },
   catppuccin = {
     loaded = true,
     path = "/home/azpect/.local/share/nvim/site/pack/packer/start/catppuccin",
@@ -124,10 +129,20 @@ _G.packer_plugins = {
     path = "/home/azpect/.local/share/nvim/site/pack/packer/start/git-blame.nvim",
     url = "https://github.com/f-person/git-blame.nvim"
   },
+  ["github-nvim-theme"] = {
+    loaded = true,
+    path = "/home/azpect/.local/share/nvim/site/pack/packer/start/github-nvim-theme",
+    url = "https://github.com/projekt0n/github-nvim-theme"
+  },
   harpoon = {
     loaded = true,
     path = "/home/azpect/.local/share/nvim/site/pack/packer/start/harpoon",
     url = "https://github.com/theprimeagen/harpoon"
+  },
+  ["jellybeans.vim"] = {
+    loaded = true,
+    path = "/home/azpect/.local/share/nvim/site/pack/packer/start/jellybeans.vim",
+    url = "https://github.com/nanotech/jellybeans.vim"
   },
   ["kanagawa.nvim"] = {
     loaded = true,
@@ -216,10 +231,20 @@ _G.packer_plugins = {
     path = "/home/azpect/.local/share/nvim/site/pack/packer/start/plenary.nvim",
     url = "https://github.com/nvim-lua/plenary.nvim"
   },
+  rainbow_csv = {
+    loaded = true,
+    path = "/home/azpect/.local/share/nvim/site/pack/packer/start/rainbow_csv",
+    url = "https://github.com/mechatroner/rainbow_csv"
+  },
   ["rose-pine"] = {
     loaded = true,
     path = "/home/azpect/.local/share/nvim/site/pack/packer/start/rose-pine",
     url = "https://github.com/rose-pine/neovim"
+  },
+  ["siena.vim"] = {
+    loaded = true,
+    path = "/home/azpect/.local/share/nvim/site/pack/packer/start/siena.vim",
+    url = "https://github.com/brettbar/siena.vim"
   },
   ["telescope.nvim"] = {
     loaded = true,
@@ -236,11 +261,6 @@ _G.packer_plugins = {
     path = "/home/azpect/.local/share/nvim/site/pack/packer/start/toggleterm.nvim",
     url = "https://github.com/akinsho/toggleterm.nvim"
   },
-  ["tokyonight-vim"] = {
-    loaded = true,
-    path = "/home/azpect/.local/share/nvim/site/pack/packer/start/tokyonight-vim",
-    url = "https://github.com/ghifarit53/tokyonight-vim"
-  },
   ["transparent.nvim"] = {
     loaded = true,
     path = "/home/azpect/.local/share/nvim/site/pack/packer/start/transparent.nvim",
@@ -252,7 +272,7 @@ _G.packer_plugins = {
     url = "https://github.com/rush-rs/tree-sitter-asm"
   },
   treesj = {
-    config = { "\27LJ\2\n›\1\0\0\4\0\5\0\t6\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\3\0004\3\0\0=\3\4\2B\0\2\1K\0\1\0\nlangs\1\0\5\vnotify\2\24use_default_keymaps\2\15dot_repeat\2\20cursor_behavior\thold\23check_syntax_error\2\nsetup\vtreesj\frequire\0" },
+    config = { "\27LJ\2\n›\1\0\0\4\0\5\0\t6\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\3\0004\3\0\0=\3\4\2B\0\2\1K\0\1\0\nlangs\1\0\5\vnotify\2\24use_default_keymaps\2\23check_syntax_error\2\15dot_repeat\2\20cursor_behavior\thold\nsetup\vtreesj\frequire\0" },
     loaded = true,
     path = "/home/azpect/.local/share/nvim/site/pack/packer/start/treesj",
     url = "https://github.com/Wansmer/treesj"
@@ -287,11 +307,6 @@ _G.packer_plugins = {
     path = "/home/azpect/.local/share/nvim/site/pack/packer/start/vim-fugitive",
     url = "https://github.com/tpope/vim-fugitive"
   },
-  ["vim-nightfly-colors"] = {
-    loaded = true,
-    path = "/home/azpect/.local/share/nvim/site/pack/packer/start/vim-nightfly-colors",
-    url = "https://github.com/bluz71/vim-nightfly-colors"
-  },
   ["vim-polyglot"] = {
     loaded = true,
     path = "/home/azpect/.local/share/nvim/site/pack/packer/start/vim-polyglot",
@@ -302,6 +317,11 @@ _G.packer_plugins = {
     path = "/home/azpect/.local/share/nvim/site/pack/packer/start/vim-prettier",
     url = "https://github.com/prettier/vim-prettier"
   },
+  ["vim-twilight"] = {
+    loaded = true,
+    path = "/home/azpect/.local/share/nvim/site/pack/packer/start/vim-twilight",
+    url = "https://github.com/matthewtodd/vim-twilight"
+  },
   ["vim-vsnip"] = {
     loaded = true,
     path = "/home/azpect/.local/share/nvim/site/pack/packer/start/vim-vsnip",
@@ -310,14 +330,14 @@ _G.packer_plugins = {
 }
 
 time([[Defining packer_plugins]], false)
--- Config for: treesj
-time([[Config for treesj]], true)
-try_loadstring("\27LJ\2\n›\1\0\0\4\0\5\0\t6\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\3\0004\3\0\0=\3\4\2B\0\2\1K\0\1\0\nlangs\1\0\5\vnotify\2\24use_default_keymaps\2\15dot_repeat\2\20cursor_behavior\thold\23check_syntax_error\2\nsetup\vtreesj\frequire\0", "config", "treesj")
-time([[Config for treesj]], false)
 -- Config for: nvim-surround
 time([[Config for nvim-surround]], true)
 try_loadstring("\27LJ\2\n?\0\0\3\0\3\0\a6\0\0\0'\2\1\0B\0\2\0029\0\2\0004\2\0\0B\0\2\1K\0\1\0\nsetup\18nvim-surround\frequire\0", "config", "nvim-surround")
 time([[Config for nvim-surround]], false)
+-- Config for: treesj
+time([[Config for treesj]], true)
+try_loadstring("\27LJ\2\n›\1\0\0\4\0\5\0\t6\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\3\0004\3\0\0=\3\4\2B\0\2\1K\0\1\0\nlangs\1\0\5\vnotify\2\24use_default_keymaps\2\23check_syntax_error\2\15dot_repeat\2\20cursor_behavior\thold\nsetup\vtreesj\frequire\0", "config", "treesj")
+time([[Config for treesj]], false)
 
 _G._packer.inside_compile = false
 if _G._packer.needs_bufread == true then

@@ -18,20 +18,23 @@ return require('packer').startup(function(use)
   -- Color schemes
   use({'rose-pine/neovim', as = 'rose-pine'})
   use({'catppuccin/nvim', as = 'catppuccin'})
-  use('NLKNguyen/papercolor-theme') -- PaperColor
-  use('Mofiqul/dracula.nvim') -- dracula
-  use('joshdick/onedark.vim') -- onedark
-  use('romainl/Apprentice') -- apprentice
-  use('rebelot/kanagawa.nvim') -- kanagawa
-  use('ghifarit53/tokyonight-vim')
-  use('bluz71/vim-nightfly-colors')
+  use('NLKNguyen/papercolor-theme')
+  use('Mofiqul/dracula.nvim')
+  use('joshdick/onedark.vim')
+  use('romainl/Apprentice')
+  use('rebelot/kanagawa.nvim')
+  use('projekt0n/github-nvim-theme')
+  use('Gavinok/SpaceWay.vim')
+  use('brettbar/siena.vim')
+  use('nanotech/jellybeans.vim')
+  use('matthewtodd/vim-twilight')
 
   -- Select color scheme
   local function selectColor(color)
     vim.cmd('colorscheme ' .. color)
   end
 
-  selectColor('rose-pine')
+  selectColor('spaceway')
 
   -- More plugins
   use{'nvim-treesitter/nvim-treesitter', run = ':TSUpdate'}
@@ -78,6 +81,27 @@ return require('packer').startup(function(use)
   use('prettier/vim-prettier')
   use('rush-rs/tree-sitter-asm')
   use('ThePrimeagen/vim-be-good')
+  -- use {
+  --   'cameron-wags/rainbow_csv.nvim',
+  --   config = function()
+  --     require 'rainbow_csv'.setup()
+  --   end,
+  --   -- optional lazy-loading below
+  --   module = {
+  --     'rainbow_csv',
+  --     'rainbow_csv.fns'
+  --   },
+  --   ft = {
+  --     'csv',
+  --     'tsv',
+  --     'csv_semicolon',
+  --     'csv_whitespace',
+  --     'csv_pipe',
+  --     'rfc_csv',
+  --     'rfc_semicolon'
+  --   }
+  -- }
+  use('mechatroner/rainbow_csv')
 
   -- LSP Completions
   use('hrsh7th/nvim-cmp')

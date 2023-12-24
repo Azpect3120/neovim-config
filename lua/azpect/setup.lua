@@ -23,7 +23,7 @@ vim.opt.hlsearch = false
 vim.opt.incsearch = true
 
 -- Cursor
-vim.opt.cursorline = true
+vim.opt.cursorline = false
 vim.opt.cursorcolumn = false
 
 -- Colors
