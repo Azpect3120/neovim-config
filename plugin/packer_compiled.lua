@@ -164,6 +164,12 @@ _G.packer_plugins = {
     path = "/home/azpect/.local/share/nvim/site/pack/packer/start/mason.nvim",
     url = "https://github.com/williamboman/mason.nvim"
   },
+  ["noice.nvim"] = {
+    config = { "\27LJ\2\n3\0\0\3\0\3\0\0066\0\0\0'\2\1\0B\0\2\0029\0\2\0B\0\1\1K\0\1\0\nsetup\nnoice\frequire\0" },
+    loaded = true,
+    path = "/home/azpect/.local/share/nvim/site/pack/packer/start/noice.nvim",
+    url = "https://github.com/folke/noice.nvim"
+  },
   ["nui.nvim"] = {
     loaded = true,
     path = "/home/azpect/.local/share/nvim/site/pack/packer/start/nui.nvim",
@@ -193,6 +199,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/azpect/.local/share/nvim/site/pack/packer/start/nvim-lspconfig",
     url = "https://github.com/neovim/nvim-lspconfig"
+  },
+  ["nvim-notify"] = {
+    loaded = true,
+    path = "/home/azpect/.local/share/nvim/site/pack/packer/start/nvim-notify",
+    url = "https://github.com/rcarriga/nvim-notify"
   },
   ["nvim-surround"] = {
     config = { "\27LJ\2\n?\0\0\3\0\3\0\a6\0\0\0'\2\1\0B\0\2\0029\0\2\0004\2\0\0B\0\2\1K\0\1\0\nsetup\18nvim-surround\frequire\0" },
@@ -281,7 +292,7 @@ _G.packer_plugins = {
     url = "https://github.com/rush-rs/tree-sitter-asm"
   },
   treesj = {
-    config = { "\27LJ\2\n›\1\0\0\4\0\5\0\t6\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\3\0004\3\0\0=\3\4\2B\0\2\1K\0\1\0\nlangs\1\0\5\vnotify\2\15dot_repeat\2\20cursor_behavior\thold\23check_syntax_error\2\24use_default_keymaps\2\nsetup\vtreesj\frequire\0" },
+    config = { "\27LJ\2\n›\1\0\0\4\0\5\0\t6\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\3\0004\3\0\0=\3\4\2B\0\2\1K\0\1\0\nlangs\1\0\5\20cursor_behavior\thold\23check_syntax_error\2\24use_default_keymaps\2\15dot_repeat\2\vnotify\2\nsetup\vtreesj\frequire\0" },
     loaded = true,
     path = "/home/azpect/.local/share/nvim/site/pack/packer/start/treesj",
     url = "https://github.com/Wansmer/treesj"
@@ -341,12 +352,16 @@ _G.packer_plugins = {
 time([[Defining packer_plugins]], false)
 -- Config for: treesj
 time([[Config for treesj]], true)
-try_loadstring("\27LJ\2\n›\1\0\0\4\0\5\0\t6\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\3\0004\3\0\0=\3\4\2B\0\2\1K\0\1\0\nlangs\1\0\5\vnotify\2\15dot_repeat\2\20cursor_behavior\thold\23check_syntax_error\2\24use_default_keymaps\2\nsetup\vtreesj\frequire\0", "config", "treesj")
+try_loadstring("\27LJ\2\n›\1\0\0\4\0\5\0\t6\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\3\0004\3\0\0=\3\4\2B\0\2\1K\0\1\0\nlangs\1\0\5\20cursor_behavior\thold\23check_syntax_error\2\24use_default_keymaps\2\15dot_repeat\2\vnotify\2\nsetup\vtreesj\frequire\0", "config", "treesj")
 time([[Config for treesj]], false)
 -- Config for: nvim-surround
 time([[Config for nvim-surround]], true)
 try_loadstring("\27LJ\2\n?\0\0\3\0\3\0\a6\0\0\0'\2\1\0B\0\2\0029\0\2\0004\2\0\0B\0\2\1K\0\1\0\nsetup\18nvim-surround\frequire\0", "config", "nvim-surround")
 time([[Config for nvim-surround]], false)
+-- Config for: noice.nvim
+time([[Config for noice.nvim]], true)
+try_loadstring("\27LJ\2\n3\0\0\3\0\3\0\0066\0\0\0'\2\1\0B\0\2\0029\0\2\0B\0\1\1K\0\1\0\nsetup\nnoice\frequire\0", "config", "noice.nvim")
+time([[Config for noice.nvim]], false)
 
 _G._packer.inside_compile = false
 if _G._packer.needs_bufread == true then

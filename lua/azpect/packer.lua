@@ -80,6 +80,13 @@ return require('packer').startup(function(use)
   use('ThePrimeagen/vim-be-good')
   use('mechatroner/rainbow_csv')
   use('nvim-tree/nvim-web-devicons')
+  use('rcarriga/nvim-notify')
+  use {
+    'folke/noice.nvim',
+    config = function()
+      require('noice').setup()
+    end
+  }
 
   -- AI Integration
   use({
