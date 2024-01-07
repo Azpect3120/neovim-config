@@ -34,7 +34,7 @@ return require('packer').startup(function(use)
     vim.cmd('colorscheme ' .. color)
   end
 
-  selectColor('spaceway')
+  selectColor('rose-pine-moon')
 
   -- More plugins
   use{'nvim-treesitter/nvim-treesitter', run = ':TSUpdate'}
@@ -68,10 +68,7 @@ return require('packer').startup(function(use)
       end,
     })
   use('f-person/git-blame.nvim')
-  use({
-      'folke/trouble.nvim',
-      requires = { "nvim-tree/nvim-web-devicons" },
-    })
+  use('folke/trouble.nvim')
   use('mattn/emmet-vim')
   use('terrortylor/nvim-comment')
   use('kristijanhusak/vim-dadbod-ui')
@@ -81,27 +78,18 @@ return require('packer').startup(function(use)
   use('prettier/vim-prettier')
   use('rush-rs/tree-sitter-asm')
   use('ThePrimeagen/vim-be-good')
-  -- use {
-  --   'cameron-wags/rainbow_csv.nvim',
-  --   config = function()
-  --     require 'rainbow_csv'.setup()
-  --   end,
-  --   -- optional lazy-loading below
-  --   module = {
-  --     'rainbow_csv',
-  --     'rainbow_csv.fns'
-  --   },
-  --   ft = {
-  --     'csv',
-  --     'tsv',
-  --     'csv_semicolon',
-  --     'csv_whitespace',
-  --     'csv_pipe',
-  --     'rfc_csv',
-  --     'rfc_semicolon'
-  --   }
-  -- }
   use('mechatroner/rainbow_csv')
+  use('nvim-tree/nvim-web-devicons')
+
+  -- AI Integration
+  use({
+      "jackMort/ChatGPT.nvim",
+      requires = {
+        "MunifTanjim/nui.nvim",
+        "nvim-lua/plenary.nvim",
+        "nvim-telescope/telescope.nvim"
+      }
+    })
 
   -- LSP Completions
   use('hrsh7th/nvim-cmp')
