@@ -18,7 +18,7 @@ local BUILTIN_STAGES = {
 
 require('notify').setup({
     level = vim.log.levels.INFO,
-    timeout = 2500,
+    timeout = 5000,
     max_width = nil,
     max_height = nil,
     stages = BUILTIN_STAGES.SLIDE,
